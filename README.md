@@ -2,7 +2,10 @@
 
 Ivan Ganev personal configuration
 
-https://github.com/dollarshaveclub/eslint-config-dollarshaveclub
-https://github.com/dollarshaveclub/shave
+Other configurations that helped me:
 
-https://eslint.org/docs/developer-guide/shareable-configs
+- Eslint guide: [eslint.org/docs/developer-guide/shareable-configs](https://eslint.org/docs/developer-guide/shareable-configs)
+
+- [github.com/dollarshaveclub/eslint-config-dollarshaveclub](https://github.com/dollarshaveclub/eslint-config-dollarshaveclub)
+
+- [medium.com/@natterstefan/how-to-create-your-own-shared-eslint-prettier-and-stylelint-configuration-3930dd764de3](https://medium.com/@natterstefan/how-to-create-your-own-shared-eslint-prettier-and-stylelint-configuration-3930dd764de3)

@@ -47,3 +47,5 @@ node_modules/
 .serverless/
 yarn.lock
 package-lock.json
+
+example/

@@ -20,13 +20,6 @@
     "ajv": "5.0.0"
   },
   "description": "Ivan Ganev eslint config",
-  "files": [
-    "index.js",
-    "react.js",
-    "node.js",
-    "prettier.js",
-    "prettier.config.js"
-  ],
   "keywords": [
     "eslint",
     "eslint-config",

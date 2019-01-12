@@ -12,4 +12,6 @@ Other configurations that helped me:
 
 - [github.com/dollarshaveclub/eslint-config-dollarshaveclub](https://github.com/dollarshaveclub/eslint-config-dollarshaveclub)
 
+- [github.com/expo/eslint-config-universe](https://github.com/expo/eslint-config-universe)
+
 - [medium.com/@natterstefan/how-to-create-your-own-shared-eslint-prettier-and-stylelint-configuration-3930dd764de3](https://medium.com/@natterstefan/how-to-create-your-own-shared-eslint-prettier-and-stylelint-configuration-3930dd764de3)

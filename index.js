@@ -2,7 +2,7 @@
 
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['standard', 'prettier/standard'],
+  extends: ['standard', 'standard-react', 'prettier/standard'],
   plugins: ['sort-imports-es6-autofix', 'standard', 'jest', 'prettier'],
   env: {
     es6: true,

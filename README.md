@@ -2,6 +2,10 @@
 
 Ivan Ganev personal configuration
 
+```
+npm i @ganevru/eslint-config-ganevru
+```
+
 Other configurations that helped me:
 
 - Eslint guide: [eslint.org/docs/developer-guide/shareable-configs](https://eslint.org/docs/developer-guide/shareable-configs)

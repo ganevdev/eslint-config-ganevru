@@ -34,6 +34,11 @@
   "license": "MIT",
   "main": "index.js",
   "name": "eslint-config-ganevru",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ganevru/eslint-config-ganevru.git"
+  },
+  "homepage": "https://github.com/Ganevru/eslint-config-ganevru",
   "peerDependencies": {
     "eslint": "^5.11.0",
     "prettier": "^1.15.3",

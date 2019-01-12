@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "eslint-config-ganevru",
+  "name": "@ganevru/eslint-config-ganevru",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ganevru/eslint-config-ganevru.git"
@@ -47,5 +47,12 @@
   "scripts": {
     "test": "jest"
   },
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "bugs": {
+    "url": "https://github.com/Ganevru/eslint-config-ganevru/issues"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {}
 }

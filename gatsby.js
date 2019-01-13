@@ -1,10 +1,7 @@
 'use strict'
 
 module.exports = {
-  extends: [
-    require.resolve('./'),
-    require.resolve('eslint-config-standard-react')
-  ],
+  extends: [require.resolve('./'), require.resolve('./react.js')],
   rules: {
     'react/prefer-stateless-function': 'off',
     'react/prop-types': 'off',

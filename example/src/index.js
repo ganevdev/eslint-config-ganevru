@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <h1>{headline}</h1>
-        <Text />
+        <Text pathname={this.props.location.pathname} />
       </React.Fragment>
     )
   }

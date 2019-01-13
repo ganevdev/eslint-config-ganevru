@@ -14,6 +14,8 @@ Other configurations that helped me:
 
 - [https://github.com/expo/eslint-config-universe](https://github.com/expo/eslint-config-universe)
 
+- [https://github.com/brandonkal/eslint-config-gatsby-standard](https://github.com/brandonkal/eslint-config-gatsby-standard)
+
 - [https://github.com/xojs/xo](https://github.com/xojs/xo)
 
 - [https://medium.com/@natterstefan/how-to-create-your-own-shared-eslint-prettier-and-stylelint-configuration-3930dd764de3](https://medium.com/@natterstefan/how-to-create-your-own-shared-eslint-prettier-and-stylelint-configuration-3930dd764de3)

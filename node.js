@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  extends: [require.resolve('./index.js')],
+  extends: [require.resolve('./')],
   env: {
     node: true
   }

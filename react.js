@@ -1,6 +1,6 @@
 'use strict'
 
 module.exports = {
-  extends: [require.resolve('./index.js')],
+  extends: [require.resolve('./')],
   plugins: ['jsx-a11y']
 }

@@ -10,7 +10,6 @@ module.exports = {
     'plugin:lodash-fp/recommended'
   ],
   plugins: [
-    'no-loops',
     'sort-imports-es6-autofix',
     'standard',
     'jest',
@@ -31,7 +30,6 @@ module.exports = {
   },
   rules: {
     'no-var': 'error',
-    'no-loops/no-loops': 2,
     'sort-imports-es6-autofix/sort-imports-es6': [
       1,
       {

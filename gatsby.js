@@ -1,5 +1,3 @@
-'use strict'
-
 module.exports = {
   extends: [require.resolve('./'), require.resolve('./react.js')],
   rules: {
@@ -9,14 +7,12 @@ module.exports = {
     'prefer-destructuring': 'off',
     strict: 'off',
     'react/jsx-no-target-blank': 'warn',
+    'react/jsx-key': 'warn',
     'react/no-unused-prop-types': 'off',
-    'react/no-unescaped-entities': 'off'
+    'react/no-unescaped-entities': 'warn'
   },
   settings: {
     'import/core-modules': []
-  },
-  env: {
-    browser: true
   },
   globals: {
     graphql: true

@@ -1,22 +1,24 @@
 {
   "author": "Ivan Ganev <iganevru@gmail.com>",
   "dependencies": {
-    "babel-eslint": "10.0.1",
-    "eslint": "5.12.0",
+    "ajv": "5.0.0",
     "eslint-config-prettier": "3.3.0",
     "eslint-config-standard": "12.0.0",
     "eslint-config-standard-react": "7.0.2",
+    "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jest": "22.1.3",
     "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-lodash": "^5.1.0",
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-node": "8.0.1",
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-promise": "4.0.1",
     "eslint-plugin-react": "7.12.3",
     "eslint-plugin-sort-imports-es6-autofix": "0.3.0",
     "eslint-plugin-standard": "4.0.0",
-    "prettier": "1.15.3",
-    "ajv": "5.0.0"
+    "eslint-plugin-unicorn": "^6.0.1"
   },
   "description": "Ivan Ganev eslint config",
   "keywords": [
@@ -39,7 +41,11 @@
     "babel-eslint": "^9.0.0"
   },
   "scripts": {
-    "test": "jest"
+    "jest": "jest",
+    "test": "npm run -s lint jest",
+    "lint": "lint-fix lint-quiet",
+    "lint-fix": "eslint '**/*.{js,jsx}' --fix",
+    "lint-quiet": "eslint '**/*.{js,jsx}' --quiet"
   },
   "version": "0.0.5",
   "bugs": {
@@ -48,5 +54,10 @@
   "directories": {
     "example": "example"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.12.0",
+    "prettier": "1.15.3"
+  }
 }

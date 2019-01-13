@@ -11,5 +11,13 @@ module.exports = {
   rules: {
     'fp/no-class': 0,
     'fp/no-this': 0
-  }
+  },
+  overrides: [
+    {
+      files: ['*/components/**/*.js'],
+      rules: {
+        'unicorn/filename-case': ['error', { case: 'pascalCase' }]
+      }
+    }
+  ]
 }

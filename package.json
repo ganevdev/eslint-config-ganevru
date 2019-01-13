@@ -28,7 +28,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "@ganevru/eslint-config-ganevru",
+  "name": "eslint-config-ganevru",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ganevru/eslint-config-ganevru.git"
@@ -46,7 +46,7 @@
     "lint-fix": "eslint '**/*.{js,jsx}' --fix",
     "lint-quiet": "eslint '**/*.{js,jsx}' --quiet"
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
   "bugs": {
     "url": "https://github.com/Ganevru/eslint-config-ganevru/issues"
   },

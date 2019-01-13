@@ -7,7 +7,8 @@ module.exports = {
     'plugin:unicorn/recommended',
     'plugin:jest/recommended',
     'plugin:fp/recommended',
-    'plugin:lodash-fp/recommended'
+    'plugin:lodash-fp/recommended',
+    'plugin:import/recommended'
   ],
   plugins: [
     'sort-imports-es6-autofix',
@@ -17,7 +18,8 @@ module.exports = {
     'lodash',
     'unicorn',
     'fp',
-    'lodash-fp'
+    'lodash-fp',
+    'import'
   ],
   env: {
     es6: true,

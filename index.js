@@ -25,7 +25,7 @@ module.exports = {
     'jest/globals': true
   },
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2018,
     sourceType: 'module'
   },
   rules: {

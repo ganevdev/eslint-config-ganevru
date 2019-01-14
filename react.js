@@ -9,8 +9,20 @@ module.exports = {
   },
   plugins: ['jsx-a11y'],
   rules: {
-    'fp/no-class': 0,
-    'fp/no-this': 0
+    'fp/no-class': 1,
+    'fp/no-this': 1,
+    'fp/no-mutation': [
+      2,
+      {
+        exceptions: [
+          { property: 'propTypes' },
+          { property: 'defaultProps' },
+          { property: 'contextTypes' },
+          { property: 'childContextTypes' }
+        ]
+      }
+    ],
+    'react/prop-types': 'warn'
   },
   overrides: [
     {

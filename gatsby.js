@@ -2,7 +2,6 @@ module.exports = {
   extends: [require.resolve('./'), require.resolve('./react.js')],
   rules: {
     'react/prefer-stateless-function': 'warn',
-    'react/prop-types': 'warn',
     'react/no-danger': 'warn',
     'prefer-destructuring': 'warn',
     strict: 'warn',

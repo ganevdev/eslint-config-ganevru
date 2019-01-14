@@ -3,23 +3,21 @@ module.exports = {
   extends: [
     'standard',
     'prettier/standard',
-    'plugin:lodash/recommended',
     'plugin:unicorn/recommended',
     'plugin:jest/recommended',
     'plugin:fp/recommended',
-    'plugin:lodash-fp/recommended',
-    'plugin:import/recommended'
+    'plugin:import/recommended',
+    'plugin:lodash-fp/recommended'
   ],
   plugins: [
-    'sort-imports-es6-autofix',
     'standard',
+    'sort-imports-es6-autofix',
     'jest',
     'prettier',
-    'lodash',
     'unicorn',
     'fp',
-    'lodash-fp',
-    'import'
+    'import',
+    'lodash-fp'
   ],
   env: {
     es6: true,
@@ -31,7 +29,7 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    'no-var': 'error',
+    'arrow-parens': 1,
     'sort-imports-es6-autofix/sort-imports-es6': [
       1,
       {

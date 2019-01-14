@@ -7,7 +7,9 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:fp/recommended',
     'plugin:import/recommended',
-    'plugin:lodash-fp/recommended'
+    'plugin:lodash-fp/recommended',
+    'plugin:lodash/recommended',
+    'plugin:promise/recommended'
   ],
   plugins: [
     'standard',
@@ -17,7 +19,9 @@ module.exports = {
     'unicorn',
     'fp',
     'import',
-    'lodash-fp'
+    'lodash-fp',
+    'lodash',
+    'promise'
   ],
   env: {
     es6: true,
@@ -29,6 +33,7 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
+    'fp/no-nil': 0,
     'arrow-parens': 1,
     'sort-imports-es6-autofix/sort-imports-es6': [
       1,
@@ -39,10 +44,16 @@ module.exports = {
       }
     ],
     'fp/no-mutation': [
-      'error',
+      1,
       {
         commonjs: true,
-        allowThis: true
+        allowThis: true,
+        exceptions: [
+          { property: 'propTypes' },
+          { property: 'defaultProps' },
+          { property: 'contextTypes' },
+          { property: 'childContextTypes' }
+        ]
       }
     ]
   }

@@ -16,7 +16,8 @@
     "eslint-plugin-sort-imports-es6-autofix": "^0.3.0",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-unicorn": "^7.0.0",
-    "eslint-plugin-lodash-fp": "^2.2.0-a1"
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "eslint-plugin-lodash": "^5.1.0"
   },
   "description": "Ivan Ganev eslint config",
   "keywords": [

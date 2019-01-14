@@ -11,18 +11,8 @@ module.exports = {
   rules: {
     'fp/no-class': 1,
     'fp/no-this': 1,
-    'fp/no-mutation': [
-      2,
-      {
-        exceptions: [
-          { property: 'propTypes' },
-          { property: 'defaultProps' },
-          { property: 'contextTypes' },
-          { property: 'childContextTypes' }
-        ]
-      }
-    ],
-    'react/prop-types': 'warn'
+    'react/prop-types': 'warn',
+    'react/no-danger': '0'
   },
   overrides: [
     {

@@ -2,19 +2,15 @@
   "author": "Ivan Ganev <iganevru@gmail.com>",
   "dependencies": {
     "ajv": "^5.0.0",
-    "eslint-config-prettier": "^3.4.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-config-standard-react": "^7.0.2",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^22.1.3",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.3",
     "eslint-plugin-sort-imports-es6-autofix": "^0.3.0",
-    "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-unicorn": "^7.0.0",
     "eslint-plugin-lodash-fp": "^2.2.0-a1",
     "eslint-plugin-lodash": "^5.1.0"
@@ -22,9 +18,7 @@
   "description": "Ivan Ganev eslint config",
   "keywords": [
     "eslint",
-    "eslint-config",
-    "prettier",
-    "prettier-config"
+    "eslint-config"
   ],
   "license": "MIT",
   "main": "index.js",
@@ -36,7 +30,6 @@
   "homepage": "https://ganev.ru",
   "peerDependencies": {
     "eslint": "^5.12.0",
-    "prettier": "^1.15.3",
     "babel-eslint": "^9.0.0"
   },
   "scripts": {
@@ -46,7 +39,18 @@
     "lint-fix": "eslint '**/*.{js,jsx}' --fix",
     "lint-quiet": "eslint '**/*.{js,jsx}' --quiet"
   },
-  "version": "0.0.7",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "version": "0.1.0",
   "bugs": {
     "url": "https://github.com/Ganevru/eslint-config-ganevru/issues"
   },
@@ -54,9 +58,10 @@
     "example": "example"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.12.0",
+    "husky": "^1.3.1",
     "jest": "^23.6.0",
-    "babel-eslint": "10.0.1",
-    "eslint": "5.12.0",
-    "prettier": "1.15.3"
+    "lint-staged": "^8.1.0"
   }
 }

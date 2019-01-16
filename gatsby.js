@@ -7,12 +7,20 @@ module.exports = {
     'react/jsx-no-target-blank': 'warn',
     'react/jsx-key': 'warn',
     'react/no-unused-prop-types': 'off',
-    'react/no-unescaped-entities': 'warn'
+    'react/no-unescaped-entities': 'warn',
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['to'],
+        aspects: ['noHref', 'invalidHref', 'preferButton'],
+      },
+    ],
   },
   settings: {
-    'import/core-modules': []
+    'import/core-modules': ['gatsby'],
   },
   globals: {
-    graphql: true
-  }
-}
+    graphql: true,
+  },
+};

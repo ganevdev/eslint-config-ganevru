@@ -1,36 +1,33 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: [
-    'standard',
-    'prettier/standard',
+    'airbnb',
     'plugin:unicorn/recommended',
     'plugin:jest/recommended',
     'plugin:fp/recommended',
     'plugin:import/recommended',
     'plugin:lodash-fp/recommended',
     'plugin:lodash/canonical',
-    'plugin:promise/recommended'
+    'plugin:promise/recommended',
   ],
   plugins: [
-    'standard',
     'sort-imports-es6-autofix',
     'jest',
-    'prettier',
     'unicorn',
     'fp',
     'import',
     'lodash-fp',
     'lodash',
-    'promise'
+    'promise',
   ],
   env: {
     es6: true,
     jest: true,
-    'jest/globals': true
+    'jest/globals': true,
   },
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
     'fp/no-nil': 0,
@@ -39,13 +36,14 @@ module.exports = {
     'lodash-fp/consistent-compose': 1,
     'lodash-fp/preferred-alias': 1,
     'lodash/prefer-lodash-method': 0,
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'sort-imports-es6-autofix/sort-imports-es6': [
       1,
       {
         ignoreCase: false,
         ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
-      }
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+      },
     ],
     'fp/no-mutation': [
       1,
@@ -56,9 +54,9 @@ module.exports = {
           { property: 'propTypes' },
           { property: 'defaultProps' },
           { property: 'contextTypes' },
-          { property: 'childContextTypes' }
-        ]
-      }
-    ]
-  }
-}
+          { property: 'childContextTypes' },
+        ],
+      },
+    ],
+  },
+};

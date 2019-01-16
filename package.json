@@ -46,7 +46,7 @@
     "lint-fix": "eslint '**/*.{js,jsx}' --fix",
     "lint-quiet": "eslint '**/*.{js,jsx}' --quiet"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "bugs": {
     "url": "https://github.com/Ganevru/eslint-config-ganevru/issues"
   },

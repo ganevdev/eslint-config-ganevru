@@ -8,7 +8,7 @@ module.exports = {
     'plugin:fp/recommended',
     'plugin:import/recommended',
     'plugin:lodash-fp/recommended',
-    'plugin:lodash/recommended',
+    'plugin:lodash/canonical',
     'plugin:promise/recommended'
   ],
   plugins: [
@@ -35,6 +35,10 @@ module.exports = {
   rules: {
     'fp/no-nil': 0,
     'arrow-parens': 1,
+    'lodash-fp/no-extraneous-partials': 1,
+    'lodash-fp/consistent-compose': 1,
+    'lodash-fp/preferred-alias': 1,
+    'lodash/prefer-lodash-method': 0,
     'sort-imports-es6-autofix/sort-imports-es6': [
       1,
       {

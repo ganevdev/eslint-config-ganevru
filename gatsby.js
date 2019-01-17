@@ -23,4 +23,12 @@ module.exports = {
   globals: {
     graphql: true,
   },
+  overrides: [
+    {
+      files: ['**/*.test.js'],
+      rules: {
+        fp: 0,
+      },
+    },
+  ],
 };

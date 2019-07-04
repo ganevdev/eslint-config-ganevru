@@ -16,7 +16,8 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-sort-imports-es6-autofix": "^0.3.0",
-    "eslint-plugin-unicorn": "^7.0.0"
+    "eslint-plugin-unicorn": "^7.0.0",
+    "snyk": "^1.189.0"
   },
   "description": "Ivan Ganev eslint config",
   "devDependencies": {
@@ -61,7 +62,10 @@
     "lint": "lint-fix lint-quiet",
     "lint-fix": "eslint '*.js' --fix",
     "lint-quiet": "eslint '*.js' --quiet",
-    "test": "npm run -s lint jest"
+    "test": "npm run -s lint jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-  "version": "0.2.0"
+  "version": "0.2.0",
+  "snyk": true
 }
